@@ -6,12 +6,25 @@
     <link rel="stylesheet" href="output.css">
     <title>Document</title>
 </head>
-<body>
-    <header>
-        <div>
-            <p class="text-center text-red-600 text-6xl"> This is a merged project</p>
-        </div>
-    </header>
-    
-</body>
+<body class="flex items-center justify-center h-screen black-bg">
+    <div class="max-w-md p-6 bg-white rounded-lg shadow-lg">
+      <div id="messageBox" class="mb-4 hidden">
+        <p id="messageText" class="text-center text-xl font-bold"></p>
+      </div>
+      <button id="showMessageBtn" class="block w-full px-4 py-2 text-lg font-semibold text-white bg-blue-500 rounded hover:bg-blue-600 focus:outline-none focus:bg-blue-600">
+        Tap me daddy
+      </button>
+    </div>
+  
+    <script>
+      const messageBox = document.getElementById('messageBox');
+      const messageText = document.getElementById('messageText');
+      const showMessageBtn = document.getElementById('showMessageBtn');
+  
+      showMessageBtn.addEventListener('click', () => {
+        messageBox.classList.remove('hidden');
+        messageText.innerText = 'Ugh that was hard Jado!!, Be gentle!!';
+      });
+    </script>
+  </body>
 </html>
