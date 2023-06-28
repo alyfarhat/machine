@@ -2,3 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 @tailwind variants;
+
+html,body{
+    margin: 0;
+    padding: 0;
+    background-color: grey;
+    ::-webkit-scrollbar {
+        width: 0.5em;
+      }
+      overflow-y: scroll;
+}
+
+.hero{
+    background-image: url("/media/image.jpg") !important;
+}
