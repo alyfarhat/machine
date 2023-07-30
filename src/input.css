@@ -14,5 +14,5 @@ html,body{
 }
 
 .hero{
-    background-image: url("/media/image.jpg") !important;
+    background-image: url("../media/image.jpg") !important;
 }
